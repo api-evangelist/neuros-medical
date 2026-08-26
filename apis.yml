@@ -1,17 +1,32 @@
 aid: neuros-medical
 name: Neuros Medical
-description: 'Neuros Medical is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Neuros Medical is a privately held medical device company headquartered in Arden Hills, Minnesota,
+  and the maker of the Altius Direct Electrical Nerve Stimulation System — an implantable, patient-controlled
+  high-frequency nerve block indicated as an aid in the management of chronic intractable phantom and residual
+  lower limb post-amputation pain in adult amputees. The system pairs a nerve cuff electrode placed around a
+  peripheral nerve with an implantable pulse generator and a handheld patient controller, and received FDA
+  approval in 2024 after FDA Breakthrough Device Designation and the QUEST pivotal trial. The company sells an
+  implantable therapy to health systems, pain physicians and amputees; it operates a marketing and
+  patient-education website and publishes no developer program, public API, SDK or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/neuros-medical/refs/heads/main/apis.yml
+image: https://www.neurosmedical.com/wp-content/uploads/2024/04/cropped-Neuros-Logo-270x270.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Medical Devices
+- Neuromodulation
+- Neurostimulation
+- Pain Management
+- Health Care
+- Implantable Devices
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +34,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/neuros-medical-domain-security.yml
+- type: LLMsTxt
+  url: llms/neuros-medical-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.neurosmedical.com/
+- type: About
+  url: https://www.neurosmedical.com/about/
+- type: Support
+  url: https://www.neurosmedical.com/contact-us/
+- type: Blog
+  url: https://www.neurosmedical.com/news/
+- type: BlogRSS
+  url: https://www.neurosmedical.com/feed/
+- type: FAQ
+  url: https://www.neurosmedical.com/faq/
+- type: TermsOfService
+  url: https://www.neurosmedical.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.neurosmedical.com/privacy-policy-terms-of-use/
+- type: Careers
+  url: https://www.neurosmedical.com/employment/
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Neuros Medical sells an implanted nerve-block device (Altius pulse generator, nerve cuff electrode
+    and a handheld patient controller) to hospitals and pain physicians; neurosmedical.com is a
+    WordPress patient-education site with no developer section, and every contract-discovery path
+    including /openapi.json, /graphql, /developers and all /.well-known/* returned 404.
+  evidence:
+  - url: https://www.neurosmedical.com/openapi.json
+    status: 404
+  - url: https://www.neurosmedical.com/developers
+    status: 404
+  - url: https://www.neurosmedical.com/graphql
+    status: 404
+  - url: https://www.neurosmedical.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.neurosmedical.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.neurosmedical.com/
+    status: 200
+  checked: '2026-08-26'

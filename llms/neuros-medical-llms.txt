@@ -1,0 +1,52 @@
+# Neuros Medical
+
+> Neuros Medical is a privately held medical device company in Arden Hills, Minnesota. It makes the
+> Altius Direct Electrical Nerve Stimulation System, an implantable high-frequency nerve block
+> indicated as an aid in the management of chronic intractable phantom and residual lower limb
+> post-amputation pain in adult amputees. Altius received FDA approval in 2024 following FDA
+> Breakthrough Device Designation and the QUEST pivotal trial.
+
+## API surface
+
+Neuros Medical publishes **no public API**. As of 2026-08-26 there is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK or package in any public registry, no MCP
+server and no A2A agent card. The product is an implanted pulse generator, a nerve cuff electrode and
+a handheld patient controller — hardware and clinical therapy, not software sold to developers.
+
+Probed and confirmed absent on 2026-08-26 (all HTTP 404 on www.neurosmedical.com): /openapi.json,
+/openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc, /graphql, /llms.txt,
+/developers, /developer, /api, and every /.well-known/ path including security.txt, api-catalog,
+agent-card.json and agent.json.
+
+The corporate site runs WordPress and therefore exposes the CMS default REST discovery document at
+https://www.neurosmedical.com/wp-json/ (HTTP 200, WordPress core namespaces only). That is content
+management infrastructure for the marketing site, not a product API, and it is deliberately not
+catalogued as one.
+
+## Company
+
+- [Home](https://www.neurosmedical.com/): company and product overview.
+- [About](https://www.neurosmedical.com/about/): mission, leadership, location.
+- [How Altius Works](https://www.neurosmedical.com/how-altius-works/): system components, patient controller, charging.
+- [Healthcare Professionals](https://www.neurosmedical.com/healthcare-professionals/): clinician-facing product information.
+- [Clinical Results](https://www.neurosmedical.com/clinical-results/): QUEST pivotal trial outcomes.
+- [Clinical Literature](https://www.neurosmedical.com/clinical-literature/): published studies.
+- [Instructions for Use](https://www.neurosmedical.com/instructions-for-use/): IFU and labeling.
+- [FAQ](https://www.neurosmedical.com/faq/)
+- [Patents](https://www.neurosmedical.com/patents/)
+- [News](https://www.neurosmedical.com/news/) ([RSS](https://www.neurosmedical.com/feed/))
+- [Contact](https://www.neurosmedical.com/contact-us/)
+- [Terms of Use](https://www.neurosmedical.com/terms-of-use/)
+- [Privacy Policy](https://www.neurosmedical.com/privacy-policy-terms-of-use/)
+
+## Optional
+
+- [Provider Locator](https://www.neurosmedical.com/altius-provider-locator/): find an implanting center.
+- [Do I Qualify](https://www.neurosmedical.com/do-i-qualify/): patient eligibility.
+- [Patient Stories](https://www.neurosmedical.com/patient-stories/)
+- [Employment](https://www.neurosmedical.com/employment/)
+
+---
+generated: 2026-08-26
+method: generated
+source: apis.yml + live probes of https://www.neurosmedical.com (no provider-published /llms.txt; HTTP 404)
