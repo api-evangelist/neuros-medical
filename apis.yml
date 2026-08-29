@@ -10,6 +10,17 @@ description: >-
   implantable therapy to health systems, pain physicians and amputees; it operates a marketing and
   patient-education website and publishes no developer program, public API, SDK or machine-readable contract.
 url: https://raw.githubusercontent.com/api-evangelist/neuros-medical/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.neurosmedical.com/wp-content/uploads/2024/04/cropped-Neuros-Logo-270x270.png
 x-type: company
 x-source: harvest:secondary-market
